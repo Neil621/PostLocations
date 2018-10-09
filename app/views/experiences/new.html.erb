@@ -1,0 +1,46 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    Create your experience
+  </div>
+  <div class="panel-body">
+    <div class="container">
+
+      <%= form_for @experience do |f| %>
+
+          <div class="row">
+
+            <div class="col-md-4 select">
+              <div class="form-group">
+
+              </div>
+            </div>
+
+            <div class="col-md-4 select">
+              <div class="form-group">
+                <label>Experience Type</label>
+                <%= f.select :exp_type, [["Eating out", "Eating out"], ["Recreational", "Recreational"], ["Bars", "Bars"]],
+                             id: "ex_type", prompt: "Select...", class: "form-control" %>
+              </div>
+            </div>
+
+            <div class="col-md-4 select">
+
+            </div>
+
+            <div class="col-md-4 select">
+
+            </div>
+
+            <div class="col-md-4 select">
+
+            </div>
+
+          </div>
+
+          <div><%= f.submit "Create My Experience", class: "btn btn-normal" %></div>
+
+      <% end %>
+
+    </div>
+  </div>
+</div>

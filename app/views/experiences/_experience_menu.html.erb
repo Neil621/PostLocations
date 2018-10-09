@@ -1,0 +1,24 @@
+<ul class="sidebar-list">
+  <li class="sidebar-item">
+    <%= link_to "Listing", listing_experience_path, class: "sidebar-link active" %>
+    <span class="pull-right text-babu"><i class="fa fa-check"></i></span>
+  </li>
+
+
+
+
+  <li class="sidebar-item">
+    <%= link_to "Location", location_experience_path, class: "sidebar-link active" %>
+    <% if !@experience.address.blank? %>
+      <span class="pull-right text-babu"><i class="fa fa-check"></i></span>
+    <% end %>
+  </li>
+</ul>
+<hr/>
+
+<!--% is_ready = !@experience.active && !@experience.price.blank? && !@experience.listing_name.blank? && !@experience.photos.blank? && !@experience.address.blank? %--->
+
+<!---%= form_for @experience do |f| %>
+  <!--%= f.hidden_field :active, value: true %>
+  <!--%= f.submit "Publish", id: "publish_button", class: "btn btn-normal btn-block", disabled: !is_ready %>
+<!_-% end %->
