@@ -44,7 +44,7 @@ class ExperiencesController < ApplicationController
 
   def update
     new_params = experience_params
-    new_params = experience_params.merge(active: true) if is_ready_experience
+    #new_params = experience_params.merge(active: true) if is_ready_experience
 
     if @experience.update(new_params)
       flash[:notice] = "Saved..."

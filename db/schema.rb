@@ -16,7 +16,9 @@ ActiveRecord::Schema.define(version: 2018_10_08_222537) do
     t.string "exp_type"
     t.text "summary"
     t.string "address"
+    t.string "listing_name"
     t.boolean "active"
+    t.integer "price"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

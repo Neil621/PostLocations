@@ -4,7 +4,9 @@ class CreateExperiences < ActiveRecord::Migration[5.2]
       t.string :exp_type
       t.text :summary
       t.string :address
+      t.string :listing_name
       t.boolean :active
+      t.integer :price
       t.references :user, foreign_key: true
       t.timestamps
     end
