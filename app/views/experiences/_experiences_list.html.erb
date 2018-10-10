@@ -1,0 +1,24 @@
+<% @experiences.each do |experience| %>
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading preview">
+          <!--%= image_tag experience.cover_photo(:medium) %-->
+        </div>
+
+        <div class="panel-body">
+
+          <%= link_to experience.listing_name, experience %><br/>
+          $<%= experience.price %> - <%= experience.exp_type %>
+          <div id="star_<%= experience.id %>"></div> <!--%= pluralize(experience.average_rating, "review") %-->
+        </div>
+      </div>
+    </div>
+
+    <script>
+     /* $('#star_<!%= experience.id %>').raty({
+        path: '/assets',
+        readOnly: true,
+        score: <!%= experience.average_rating %>
+      });*/
+    </script>
+<% end %>

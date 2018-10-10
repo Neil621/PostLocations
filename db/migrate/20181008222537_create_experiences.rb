@@ -8,6 +8,8 @@ class CreateExperiences < ActiveRecord::Migration[5.2]
       t.boolean :active
       t.integer :price
       t.references :user, foreign_key: true
+      t.float :latitude
+      t.float :longitude
       t.timestamps
     end
   end
