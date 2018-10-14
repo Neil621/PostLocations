@@ -2,6 +2,7 @@ class ExperiencesController < ApplicationController
 
   before_action :set_experience, except: [:index, :new, :create]
   before_action :authenticate_user!, except: [:show]
+  before_action :is_authorised, only: [:listing, :pricing, :description,   :location, :update]
 
 
   def index
@@ -62,7 +63,11 @@ class ExperiencesController < ApplicationController
   end
 
   def experience_params
-    params.require(:experience).permit(:exp_type, :listing_name, :summary, :address, :price, :active)
+    params.require(:experience).permit(:exp_type, :listing_name, :summary, :address, :price, :active, :latitude, :longitude)
   end
 
+
+  def is_authorised
+    redirect_to root_path, alert: "You don't have permission" unless current_user.id == @experience.user_id
+  end
 end

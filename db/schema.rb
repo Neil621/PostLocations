@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 2018_10_08_222537) do
     t.boolean "active"
     t.integer "price"
     t.integer "user_id"
+    t.float "latitude"
+    t.float "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_experiences_on_user_id"

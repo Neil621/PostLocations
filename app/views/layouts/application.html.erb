@@ -3,8 +3,13 @@
   <head>
     <title>PostLocations</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <!--%= csp_meta_tag %-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU5Eypr-mIt9pW1nieA8g0yX8lBSpKAvc&libraries=places"></script>
 
+    <!---script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script-->
+    <!--script src="jquery.geocomplete.js"></script-->
+
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -14,6 +19,9 @@
   <%= render 'shared/navbar' %>
   <%= render 'shared/message' %>
 
+  <div class="container">
     <%= yield %>
+  </div>
+
   </body>
 </html>

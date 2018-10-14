@@ -12,7 +12,11 @@
 //
 //= require jquery
 //= require bootstrap-sprockets
+//= require jquery_ujs
 //= require rails-ujs
 //= require activestorage
+// require geocomplete
+
 // require turbolinks
+//= require toastr
 //= require_tree .

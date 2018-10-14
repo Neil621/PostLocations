@@ -3,17 +3,17 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.4.0'
 
-gem 'rails', '~> 5.2.0'
+gem 'rails'
 gem 'sqlite3'
-gem 'puma', '~> 3.11'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
+gem 'puma'
+gem 'sass-rails'
+gem 'uglifier'
 
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+gem 'jbuilder'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
@@ -21,10 +21,13 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap-sass'
 
 gem 'devise'
+gem 'toastr-rails', '~> 1.0'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'geocoder'
+gem 'geocoder', '~> 1.4'
 gem 'ransack'
+
+#gem 'geocomplete_rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -37,7 +40,7 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen'
 end
 
 group :test do
