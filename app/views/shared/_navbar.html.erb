@@ -21,7 +21,7 @@
         <li>
           <button class="btn btn-form btn-small">
             <!--%= link_to "Become a host", new_room_path, style: "color: white; text-decoration: none;" %-->
-            <%= link_to "Become a host", style: "color: white; text-decoration: none;" %>
+            <%= link_to "Share your experience", new_experience_path, style: "color: white; text-decoration: none;" %>
           </button>
         </li>
 
@@ -36,8 +36,8 @@
                     <%= current_user.email %> <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
-                <li><%= link_to "Manage Listing" %></li>
-                <li><%= link_to "List Your Space"%></li>
+                <!--li><!--%= link_to "Manage Listing" %></li-->
+                <!--li><!--%= link_to "List Your Space"%></li-->
 
                 <li role="separator" class="divider"></li>
                 <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
