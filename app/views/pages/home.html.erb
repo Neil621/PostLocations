@@ -4,30 +4,11 @@
   </div>
 </div>
 
-<!---%= form_tag search_path, method: :get do %>
-    <div class="row">
-      <div class="col-md-6">
-        <!---%= text_field_tag :search, params[:search], placeholder: "Where would you like to be?", class: "form-control", id: "autolocation" %>
-      </div>
-      <!--div class="col-md-3">
-        <!--%= text_field_tag :start_date, params[:start_date], placeholder: "Start Date", class: "form-control datepicker" %>
-      </div>
-      <div class="col-md-3">
-        <!--%= text_field_tag :end_date, params[:end_date], placeholder: "End Date", class: "form-control datepicker" %>
-      </div>
-    </div>
-    <br/><br/>
 
-    <!---div class="row">
-      <div class="col-md-offset-4 col-md-4">
-        <!%= submit_tag "Search", class: "btn btn-normal btn-block" %>
-      </div>
-    </div>
-<!% end %--->
 
 <br/><hr/><br/>
 
-<!-- HOMES -->
+
 <div><h3>Experiences</h3></div>
 <br/>
 
@@ -35,30 +16,11 @@
   <%= render partial: "experiences/experiences_list", locals: {experiences: @experiences} %>
 </div>
 
-<!-- CITIES -->
-<!--div><h3>Cities</h3></div-->
+
 <br/>
 
 <div class="row">
-  <div class="col-md-3 col-sm-12">
-    <a href="http://localhost:3000/search?utf8=%E2%9C%93&search=los+angeles">
-      <div class="discovery-card" style="background-image: url('/assets/LA.jpg')"></div>
-    </a>
-  </div>
-  <div class="col-md-3 col-sm-12">
-    <a href="http://localhost:3000/search?utf8=%E2%9C%93&search=london">
-      <div class="discovery-card" style="background-image: url('/assets/LD.jpg')"></div>
-    </a>
-  </div>
-  <div class="col-md-3 col-sm-12">
-    <a href="http://localhost:3000/search?utf8=%E2%9C%93&search=paris">
-      <div class="discovery-card" style="background-image: url('/assets/PR.jpg')"></div>
-    </a>
-  </div>
-  <div class="col-md-3 col-sm-12">
-    <a href="http://localhost:3000/search?utf8=%E2%9C%93&search=miami">
-      <div class="discovery-card" style="background-image: url('/assets/MI.jpg')"></div>
-    </a>
+  <!-- add customised search results here ---->
   </div>
 </div>
 
