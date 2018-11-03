@@ -15,17 +15,18 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
 
-gem 'bootsnap', '>= 1.1.0', require: false
+gem 'bootsnap',  require: false
 
 
 gem 'bootstrap-sass'
 
 gem 'devise'
-gem 'toastr-rails', '~> 1.0'
+gem 'toastr-rails'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'geocoder', '~> 1.4'
+gem 'geocoder'
 gem 'ransack'
+gem "loofah", ">= 2.2.3"
 
 #gem 'geocomplete_rails'
 
@@ -36,8 +37,8 @@ end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
-  gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'web-console'
+  gem 'listen'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen'
@@ -45,7 +46,7 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15', '< 4.0'
+  gem 'capybara'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
